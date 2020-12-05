@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>title</title>
-        <script type="type/javascript" src="script.js"></script>
-    </head>
 
-    <body>
-        <button style="width: 400px;height:60px">make a request</button>
-    </body>
+<head>
+    <title>title</title>
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <button style="width: 400px;height:60px" 
+        onmousedown="onPressedMouse()"
+        onmouseup = "releasedMouse()"
+        onmouseover="goOver()"
+        onmouseout="tookMouseOff()"
+        onmousemove="moveMouse()">
+            make a request
+    </button>
+
+    <button style="width:400px;height:60px"
+        onclick="onClick()"
+        oncontextmenu="onContextMenu()">
+            make a request two
+    </button>
+</body>
+
 </html>
