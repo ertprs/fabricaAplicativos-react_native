@@ -30,3 +30,7 @@ function onClick(){
 function onContextMenu(){
     console.log("right the mouse");
 }
+
+function lockFunction(){
+    return false;
+}
