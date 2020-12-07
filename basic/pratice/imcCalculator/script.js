@@ -8,7 +8,7 @@ function calculate() {
         imc = caluculateImc(weight.value, height.value);
         alert(imc)
         let result = document.getElementById("result");
-        result.innerHTML = "your IMC is "  + imc;
+        result.innerHTML = "<br>your IMC is "  + imc;
     } else {
         alert("is not validade");
         clearInput(weight, height);
@@ -21,6 +21,7 @@ function clearInput(weight, height){
   height.value = '';
   document.getElementById("result").innerHTML = "";
 }
+
 let caluculateImc = (weight, height) => (weight / (height * height)).toFixed(2);
 let validade = (weight, height) => (isNumber(weight) && isNumber(height));
 let isNumber = (number) => !(isNaN(number) || isNotInitialized(number) || isNull(number));
